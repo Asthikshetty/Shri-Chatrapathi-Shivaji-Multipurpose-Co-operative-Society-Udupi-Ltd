@@ -101,7 +101,7 @@ export const RouteTransition: React.FC<RouteTransitionProps> = ({ children }) =>
               </motion.div>
               
               <h2 className="mt-6 text-xl md:text-2xl font-serif font-bold text-[#5B4636] text-center max-w-md">
-                Shri Chathrapathi Shivaji Co-operative Society Ltd.
+                Shri Chathrapathi Shivaji Multipurpose Co-operative Society Ltd.
               </h2>
               <p className="mt-1 text-xs text-[#FF9900] font-sans font-extrabold uppercase tracking-wider">
                 Serving Members with Trust Since 2013
