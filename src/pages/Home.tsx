@@ -12,7 +12,6 @@ import hero1 from '../assets/shivajisociety/images/vip1.png';
 import officeImage from '../assets/shivajisociety/images/inside-office1.png';
 import officeOutlook from '../assets/shivajisociety/images/office-outlook.png';
 import vvip1 from '../assets/shivajisociety/images/vvip1.png';
-import vip3 from '../assets/shivajisociety/images/vip3.png';
 import vip6 from '../assets/shivajisociety/images/vip6.png';
 import gallery1 from '../assets/shivajisociety/images/gallery3.png';
 
