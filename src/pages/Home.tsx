@@ -537,7 +537,7 @@ export const Home: React.FC = () => {
                     <div className="p-2.5 bg-[#FF9900] text-white rounded-lg shadow-sm shrink-0">
                       <CheckCircle2 className="w-5 h-5" />
                     </div>
-                    <h3 className="font-serif font-bold text-lg text-[#5B4636] m-0">{serv.name}</h3>
+                    <h3 className="font-serif font-bold text-lg text-white m-0">{serv.name}</h3>
                   </div>
                 </div>
 
