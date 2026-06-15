@@ -18,7 +18,7 @@ import gallery1 from '../assets/shivajisociety/images/gallery3.png';
 
 // Success Story Banners
 import scholarshipImg from '../assets/shivajisociety/images/scholarship.png';
-import socialImg from '../assets/shivajisociety/images/social-recognization.png';
+import socialImg from '../assets/shivajisociety/images/vip6.png';
 import awardImg from '../assets/shivajisociety/images/award.png';
 
 
@@ -433,7 +433,7 @@ export const Home: React.FC = () => {
                 {/* Gold circular badge "Since 2013" */}
                 <div className="absolute -top-5 -right-5 w-24 h-24 rounded-full bg-[#D4AF37] border-4 border-white text-white flex flex-col items-center justify-center shadow-md select-none font-bold">
                   <span className="text-[10px] uppercase tracking-wider">Founded</span>
-                  <span className="text-base font-serif font-extrabold mt-0.5">2013</span>
+                  <span className="text-base font-serif font-extrabold mt-0.5">2014</span>
                 </div>
               </div>
             </div>
