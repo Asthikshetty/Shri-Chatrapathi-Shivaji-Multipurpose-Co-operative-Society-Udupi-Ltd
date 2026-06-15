@@ -16,13 +16,13 @@ export const SEO: React.FC<SEOProps> = ({
 }) => {
   const siteUrl = "https://shivajicooperativeudupi.in"; // Mock URL for SEO validation
   const fullUrl = `${siteUrl}${path}`;
-  const fullTitle = `${title} | Shri Chathrapathi Shivaji Co-operative Society Ltd.`;
+  const fullTitle = `${title} |  CUhathrapathi Shivaji Co-operative Society Ltd.`;
 
   // LocalBusiness JSON-LD Schema
   const schemaJsonLD = {
     "@context": "https://schema.org",
     "@type": "FinancialService",
-    "name": "Shri Chathrapathi Shivaji Co-operative Society Ltd. Udupi",
+    "name": "Chathrapathi Shivaji Co-operative Society Ltd. Udupi",
     "alternateName": "Shivaji Co-operative Society",
     "description": description,
     "url": siteUrl,
