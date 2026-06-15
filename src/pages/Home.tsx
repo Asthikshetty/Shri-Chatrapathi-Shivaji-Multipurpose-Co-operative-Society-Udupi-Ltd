@@ -524,9 +524,12 @@ export const Home: React.FC = () => {
                   className="h-40 p-6 flex flex-col justify-between relative border-b border-[#D4AF37]/15 bg-cover bg-center overflow-hidden"
                   style={{
   backgroundImage: `linear-gradient(
-    rgba(12, 2, 2, 0.05),
-    rgba(255, 255, 255, 0.05)
-  ), url(${serv.image})`}}>
+    rgba(12, 2, 2, 0.65),
+    rgba(12, 2, 2, 0.4)
+  ), url(${serv.image})`,
+  backgroundSize: "cover",
+  backgroundPosition: "center",
+  backdropFilter: "blur(3px)"}}>
                   <span className="px-3 py-1 bg-white border border-[#D4AF37]/35 text-[#5B4636] text-[10px] font-extrabold rounded-md uppercase tracking-wider w-fit z-10 shadow-sm">
                     Active Scheme
                   </span>
