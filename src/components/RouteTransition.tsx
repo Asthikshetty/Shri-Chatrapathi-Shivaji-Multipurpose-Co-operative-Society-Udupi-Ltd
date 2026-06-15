@@ -104,7 +104,7 @@ export const RouteTransition: React.FC<RouteTransitionProps> = ({ children }) =>
                 Chathrapathi Shivaji Multipurpose Co-operative Society Ltd.
               </h2>
               <p className="mt-1 text-xs text-[#FF9900] font-sans font-extrabold uppercase tracking-wider">
-                Serving Members with Trust Since 2013
+                Serving Members with Trust Since 2014
               </p>
               
               <div className="mt-5 flex items-center gap-1.5">
