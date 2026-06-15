@@ -279,13 +279,13 @@ export const Home: React.FC = () => {
                 </div>
 
                 {/* Floating statistics card (Glassmorphism white card) */}
-                {/* <div className="absolute -bottom-6 -right-4 sm:-right-8 bg-white/95 backdrop-blur-md border border-[#D4AF37]/25 p-5 rounded-2xl shadow-lg flex flex-col gap-1.5 text-left max-w-[200px] select-none">
+                {/*<div className="absolute -bottom-6 -right-4 sm:-right-8 bg-white/95 backdrop-blur-md border border-[#D4AF37]/25 p-5 rounded-2xl shadow-lg flex flex-col gap-1.5 text-left max-w-[200px] select-none">
                   <div className="flex items-center gap-2 text-[#FF9900]">
                     <Users className="w-5 h-5" />
                     <span className="text-xs font-bold uppercase tracking-wider">Milestone</span>
                   </div>
                   <span className="text-xs font-bold text-gray-500 uppercase">Active Shareholder Members</span>
-                </div>*/
+                </div>*/}
               </div>
             </div>
 
