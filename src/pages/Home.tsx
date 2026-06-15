@@ -63,7 +63,7 @@ export const Home: React.FC = () => {
       alt: "Annual Meeting 2025"
     },
     {
-      image: vip3,
+      image: vip6,
       alt: "Highest Yields on Swabhiman Fixed Deposits"
     }
   ];
@@ -237,14 +237,14 @@ export const Home: React.FC = () => {
             {/* Left Column: Typography */}
             <div className="lg:col-span-7 flex flex-col items-start gap-5 text-left z-10">
               <span className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full text-xs font-bold bg-[#FFF4E6] text-[#FF9900] uppercase tracking-wider border border-[#D4AF37]/25">
-                <ShieldCheck className="w-4 h-4 text-[#D4AF37]" /> Serving Members since 2013
+                <ShieldCheck className="w-4 h-4 text-[#D4AF37]" /> Serving Members since 2014
               </span>
               <h1 className="text-3xl sm:text-4xl lg:text-5xl font-serif font-extrabold text-[#5B4636] leading-tight tracking-tight m-0">
                 Empowering Rural Families,<br />
                 <span className="text-[#FF9900]">Building Stronger Communities.</span>
               </h1>
               <p className="text-[#5B4636]/80 font-sans font-medium text-base sm:text-lg max-w-xl leading-relaxed">
-                Welcome to Shri Chathrapathi Shivaji Multipurpose Co-operative Society Ltd. We build financial strength through cooperative values, secure deposits, and credit programs designed to help our members prosper.
+                Welcome to Chathrapathi Shivaji Multipurpose Co-operative Society Ltd. We build financial strength through cooperative values, secure deposits, and credit programs designed to help our members prosper.
               </p>
               <div className="flex flex-wrap gap-4 mt-2">
                 <Link
@@ -273,20 +273,19 @@ export const Home: React.FC = () => {
                     alt="Shri Chathrapathi Shivaji Multipurpose Co-operative Society Office Outlook"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/55 via-transparent to-transparent flex flex-col justify-end p-5 text-white text-left">
-                    <span className="font-serif font-bold text-base leading-tight">Shri Chathrapathi Shivaji Multipurpose Co-operative Society</span>
+                    <span className="font-serif font-bold text-base leading-tight">Chathrapathi Shivaji Multipurpose Co-operative Society</span>
                     <span className="text-[10px] opacity-90 font-bold uppercase tracking-wider mt-1">Udupi HQ Office</span>
                   </div>
                 </div>
 
                 {/* Floating statistics card (Glassmorphism white card) */}
-                <div className="absolute -bottom-6 -right-4 sm:-right-8 bg-white/95 backdrop-blur-md border border-[#D4AF37]/25 p-5 rounded-2xl shadow-lg flex flex-col gap-1.5 text-left max-w-[200px] select-none">
+                {/* <div className="absolute -bottom-6 -right-4 sm:-right-8 bg-white/95 backdrop-blur-md border border-[#D4AF37]/25 p-5 rounded-2xl shadow-lg flex flex-col gap-1.5 text-left max-w-[200px] select-none">
                   <div className="flex items-center gap-2 text-[#FF9900]">
                     <Users className="w-5 h-5" />
                     <span className="text-xs font-bold uppercase tracking-wider">Milestone</span>
                   </div>
-                  <span className="text-2xl font-serif font-extrabold text-[#5B4636]">3,218+</span>
                   <span className="text-xs font-bold text-gray-500 uppercase">Active Shareholder Members</span>
-                </div>
+                </div>*/
               </div>
             </div>
 
