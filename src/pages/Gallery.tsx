@@ -11,7 +11,6 @@ import img1 from '../assets/shivajisociety/images/gallery1.png';
 import img2 from '../assets/shivajisociety/images/gallary2.png';
 import img3 from '../assets/shivajisociety/images/scholarship.png';
 import img4 from '../assets/shivajisociety/images/award.png';
-import img5 from '../assets/shivajisociety/images/social-recognization.png';
 import img6 from '../assets/shivajisociety/images/scholarship2.png';
 
 interface GalleryItem {
