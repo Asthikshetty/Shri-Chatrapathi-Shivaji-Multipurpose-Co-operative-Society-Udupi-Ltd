@@ -146,7 +146,7 @@ export const Contact: React.FC = () => {
                   <div>
                     <h4 className="font-serif font-bold text-gray-900 text-base">Office Address</h4>
                     <p className="text-xs sm:text-sm text-[#5B4636]/80 mt-1 leading-relaxed">
-                      Shri Chathrapathi Shivaji Co-operative Society Ltd.<br />
+                      Chathrapathi Shivaji Co-operative Society Ltd.<br />
                       1st Floor, Karthik Towers, Near District Court,<br />
                       Udupi, Karnataka, India - 576101
                     </p>
