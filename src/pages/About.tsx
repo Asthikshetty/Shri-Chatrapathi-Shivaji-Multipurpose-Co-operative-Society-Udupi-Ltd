@@ -61,7 +61,7 @@ export const About: React.FC = () => {
       role: "Director",
       image: rcNaik,
       shortBio: "Advises on accounting, audit compliance, and general assembly records.",
-      fullBio: "Sri. Raghunath Naik coordinates with state auditing authorities to verify balance sheets and check that every co-operative transaction complies with the Karnataka Co-operative Societies Act 1959."
+      fullBio: "Sri. R C Naik coordinates with state auditing authorities to verify balance sheets and check that every co-operative transaction complies with the Karnataka Co-operative Societies Act 1959."
     },
         {
       name: "Sri. KRISHNA NAIK",
