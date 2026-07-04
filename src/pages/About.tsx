@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { ShieldCheck, Award, Mail, Phone, X } from 'lucide-react';
+import { ShieldCheck, Award, Mail,X } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { SEO } from '../components/SEO';
 import { LanguageSwitcherWrapper } from '../components/LanguageSwitcherWrapper';
@@ -27,7 +27,6 @@ interface Director {
   shortBio: string;
   fullBio: string;
   email?: string;
-  phone?: string;
   image: string;
 }
 
