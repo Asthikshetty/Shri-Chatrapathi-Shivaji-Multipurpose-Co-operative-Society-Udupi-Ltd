@@ -12,7 +12,6 @@ import img2 from '../assets/shivajisociety/images/gallary2.png';
 import img3 from '../assets/shivajisociety/images/scholarship.png';
 import img4 from '../assets/shivajisociety/images/award.png';
 import img6 from '../assets/shivajisociety/images/scholarship2.png';
-
 interface GalleryItem {
   id: number;
   title: string;
@@ -64,7 +63,6 @@ export const Gallery: React.FC = () => {
       setActivePhotoIndex((activePhotoIndex + 1) % photos.length);
     }
   };
-
   return (
     <>
       <SEO 
