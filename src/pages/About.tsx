@@ -34,6 +34,7 @@ export const About: React.FC = () => {
   const [selectedDirector, setSelectedDirector] = useState<Director | null>(null);
 
   const executives = [
+    
     {
       name: "Sri. DINESH C NAIK",
       role: "PRESIDENT",
@@ -56,6 +57,27 @@ export const About: React.FC = () => {
 
   const directors: Director[] = [
         {
+      name: "Sri. R C NAIK",
+      role: "Director",
+      image: rcNaik,
+      shortBio: "Advises on accounting, audit compliance, and general assembly records.",
+      fullBio: "Sri. Raghunath Naik coordinates with state auditing authorities to verify balance sheets and check that every co-operative transaction complies with the Karnataka Co-operative Societies Act 1959."
+    },
+        {
+      name: "Sri. KRISHNA NAIK",
+      role: "Director",
+      image: krishnaNaik,
+      shortBio: "Guides fixed deposit schemes and senior citizen interest distributions.",
+      fullBio: "Sri. Krishna Naik focuses on expanding deposit portfolios. He designs flexible monthly/quarterly interest payout structures for fixed and recurring deposits."
+    },
+    {
+      name: "Sri. LAXMANA NAIK",
+      role: "Director",
+      image: laxmanNaik,
+      shortBio: "Oversees low-interest agricultural loans and crop credit facilities.",
+      fullBio: "Sri. Laxmana Naik is dedicated to agrarian empowerment. He designs seasonal crop credit limits, irrigation machinery financing, and farm loan verification programs."
+    },
+        {
       name: "Sri. CHANDRA H NAIK",
       role: "Director",
       image: chandraHNaik,
@@ -70,6 +92,20 @@ export const About: React.FC = () => {
       shortBio: "Advises on digital banking upgrades, SMS alerts, and server safety.",
       fullBio: "Sri. Sathish Naik guides technological integrations including secure text banking alerts, automated statement servers, and ledger digitalization setups."
     },
+            {
+      name: "Sri. HARISH NAIK",
+      role: "Director",
+      image: harishNaik,
+      shortBio: "Manages gold appraisal systems and secure vault operations.",
+      fullBio: "Sri. Harish oversees branch vault operations. He ensures gold evaluation audits use correct weighing and testing procedures to guarantee asset safety."
+    },
+    {
+      name: "Sri. KARUNAKARA KANCHAN",
+      role: "Director",
+      image: karunakarKanchan,
+      shortBio: "Supervises mortgage valuations and property credit frameworks.",
+      fullBio: "Sri. Karunakara Kanchan evaluates properties for long-term mortgage loans. He verifies legal land documents and ensures fair asset valuations."
+    },
      {
       name: "Sri. SHEKHAR D SHETTY",
       role: "Director",
@@ -78,14 +114,6 @@ export const About: React.FC = () => {
       fullBio: "Sri. Shekhar D Shetty manages policy amendments during the general body meet and guarantees equal shareholder rights inside society votes."
     },
     {
-      name: "Sri. R C NAIK",
-      role: "Director",
-      image: rcNaik,
-      shortBio: "Advises on accounting, audit compliance, and general assembly records.",
-      fullBio: "Sri. Raghunath Naik coordinates with state auditing authorities to verify balance sheets and check that every co-operative transaction complies with the Karnataka Co-operative Societies Act 1959."
-    },
-    
-    {
       name: "Smt. JYOTHI M SHETTY",
       role: "Director",
       image: jyothiShetty,
@@ -93,41 +121,11 @@ export const About: React.FC = () => {
       fullBio: "Smt. Jyothi M Shetty champions female financial inclusion. She designs self-help group savings programs and provides cottage industry credit access."
     },
     {
-      name: "Sri. KRISHNA NAIK",
-      role: "Director",
-      image: krishnaNaik,
-      shortBio: "Guides fixed deposit schemes and senior citizen interest distributions.",
-      fullBio: "Sri. Krishna Naik focuses on expanding deposit portfolios. He designs flexible monthly/quarterly interest payout structures for fixed and recurring deposits."
-    },
-    
-    {
       name: "Smt. SHOBHA NAVEEN",
       role: "Director",
       image: shobanaveen,
       shortBio: "Advocates for women shareholders and family deposit plans.",
       fullBio: "Smt. Shobha represents women members during executive reviews. She advocates for high-yield family savings plans and local welfare program funding."
-    },
-        {
-      name: "Sri. LAXMANA NAIK",
-      role: "Director",
-      image: laxmanNaik,
-      shortBio: "Oversees low-interest agricultural loans and crop credit facilities.",
-      fullBio: "Sri. Laxmana Naik is dedicated to agrarian empowerment. He designs seasonal crop credit limits, irrigation machinery financing, and farm loan verification programs."
-    },
-    
-    {
-      name: "Sri. KARUNAKARA KANCHAN",
-      role: "Director",
-      image: karunakarKanchan,
-      shortBio: "Supervises mortgage valuations and property credit frameworks.",
-      fullBio: "Sri. Karunakara Kanchan evaluates properties for long-term mortgage loans. He verifies legal land documents and ensures fair asset valuations."
-    },
-        {
-      name: "Sri. HARISH NAIK",
-      role: "Director",
-      image: harishNaik,
-      shortBio: "Manages gold appraisal systems and secure vault operations.",
-      fullBio: "Sri. Harish oversees branch vault operations. He ensures gold evaluation audits use correct weighing and testing procedures to guarantee asset safety."
     },
   ];
 
