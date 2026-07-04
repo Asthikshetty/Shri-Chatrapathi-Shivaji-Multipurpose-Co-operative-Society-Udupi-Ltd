@@ -139,7 +139,7 @@ export const Footer: React.FC = () => {
     rel="noopener noreferrer"
     className="text-orange-50 hover:text-white underline transition-colors"
   >
-    Aexon Techs
+    Aexon Technologies
   </a>
 </p>
         </div>
