@@ -484,11 +484,6 @@ export const Home: React.FC = () => {
         <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
             <div className="flex flex-col items-center gap-1.5">
-              <Users className="w-8 h-8 text-[#F6E7B0]" />
-              <span className="text-2xl sm:text-3xl font-serif font-extrabold mt-1">3,218+</span>
-              <span className="text-xs font-bold uppercase tracking-wider text-orange-100">Registered Members</span>
-            </div>
-            <div className="flex flex-col items-center gap-1.5">
               <TrendingUp className="w-8 h-8 text-[#F6E7B0]" />
               <span className="text-2xl sm:text-3xl font-serif font-extrabold mt-1">₹40+ Crore</span>
               <span className="text-xs font-bold uppercase tracking-wider text-orange-100">Annual Business Volume</span>
