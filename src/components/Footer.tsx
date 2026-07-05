@@ -80,7 +80,7 @@ export const Footer: React.FC = () => {
 
           {/* Contact Details & Socials */}
           <div className="flex flex-col gap-4 text-left">
-            <h3 className="text-sm font-sans font-bold text-[#5B4636] uppercase tracking-wider border-b border-[#D4AF37]/20 pb-2">Branch Office</h3>
+            <h3 className="text-sm font-sans font-bold text-[#5B4636] uppercase tracking-wider border-b border-[#D4AF37]/20 pb-2">Head Branch Office</h3>
             <ul className="space-y-3.5 text-sm font-semibold">
               <li className="flex gap-3">
                 <MapPin className="w-5 h-5 text-[#FF9900] shrink-0 mt-0.5" />
