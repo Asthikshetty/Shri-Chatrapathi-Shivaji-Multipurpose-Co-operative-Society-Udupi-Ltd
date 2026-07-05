@@ -7,7 +7,7 @@ import { LanguageSwitcherWrapper } from '../components/LanguageSwitcherWrapper';
 // Local Asset Imports
 import aboutBanner from '../assets/shivajisociety/images/vip7.png';
 // Directors Images
-import ceoPrashanth from "../assets/directors/CEO-prashanth.jpeg";
+import ceoPrashanth from "../assets/directors/CEOIMG.jpeg";
 import chandraHNaik from "../assets/directors/ChandraHNaik.jpeg";
 import dineshCNaik from "../assets/directors/DineshCNaik.jpeg";
 import ganeshVP from "../assets/directors/GaneshVP.jpeg";
@@ -20,6 +20,8 @@ import rcNaik from "../assets/directors/RCNAIK.jpeg";
 import sathishNaik from "../assets/directors/SathishNaik.jpeg";
 import shekarDShetty from "../assets/directors/ShekarDShetty.jpeg";
 import shobanaveen from "../assets/directors/Shobanaveen.jpeg";
+import rahunath from "../assets/directors/rahunath.jpeg";
+
 
 interface Director {
   name: string;
@@ -126,6 +128,13 @@ export const About: React.FC = () => {
       image: shobanaveen,
       shortBio: "Advocates for women shareholders and family deposit plans.",
       fullBio: "Smt. Shobha represents women members during executive reviews. She advocates for high-yield family savings plans and local welfare program funding."
+    },
+    {
+      name: "Sri. Raghunath Naik",
+      role: "Director",
+      image: rahunath,
+      shortBio: "Advises on accounting, audit compliance, and general assembly records.",
+      fullBio: "Sri. R C Naik coordinates with state auditing authorities to verify balance sheets and check that every co-operative transaction complies with the Karnataka Co-operative Societies Act 1959."
     },
   ];
 
