@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { ArrowRight, ShieldCheck, Users, Calendar, Building, TrendingUp, CheckCircle2, ChevronLeft, ChevronRight, MapPin, Phone, Mail } from 'lucide-react';
+import { ArrowRight, ShieldCheck,Calendar, Building, TrendingUp, CheckCircle2, ChevronLeft, ChevronRight, MapPin, Phone, Mail } from 'lucide-react';
 import { SEO } from '../components/SEO';
 import { LanguageSwitcherWrapper } from '../components/LanguageSwitcherWrapper';
 
