@@ -12,6 +12,7 @@ import { About } from './pages/About';
 import { Services } from './pages/Services';
 import { Downloads } from './pages/Downloads';
 import { Gallery } from './pages/Gallery';
+import { NewsAnnouncements } from './pages/news';
 import { Contact } from './pages/Contact';
 
 import './App.css';
@@ -35,6 +36,7 @@ function App() {
                 <Route path="/services" element={<Services />} />
                 <Route path="/downloads" element={<Downloads />} />
                 <Route path="/gallery" element={<Gallery />} />
+                <Route path="/news" element={<NewsAnnouncements />} />
                 <Route path="/contact" element={<Contact />} />
               </Routes>
             </main>

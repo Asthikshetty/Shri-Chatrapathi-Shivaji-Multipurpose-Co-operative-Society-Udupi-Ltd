@@ -1,23 +1,28 @@
 import React, { useState, useEffect } from 'react';
-import { Calendar, ChevronLeft, ChevronRight, X, ZoomIn } from 'lucide-react';
+import { Calendar, ChevronLeft, ChevronRight, X, ZoomIn, Play } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { SEO } from '../components/SEO';
 import { LanguageSwitcherWrapper } from '../components/LanguageSwitcherWrapper';
 
-
-
 // Local Asset Imports
 import img1 from '../assets/shivajisociety/images/gallery1.png';
-import img2 from '../assets/shivajisociety/images/gallary2.png';
+import img2 from '../assets/shivajisociety/images/kudubi-holi-udupi.jpg';
 import img3 from '../assets/shivajisociety/images/scholarship.png';
 import img4 from '../assets/shivajisociety/images/award.png';
 import img6 from '../assets/shivajisociety/images/scholarship2.png';
+
+// Import your video file here (adjust the path as needed)
+import folkDanceVideo from '../assets/shivajisociety/images/folkdance.mp4'; // Ensure this path is correct and the video file exists
+//const folkDanceVideo = "https://www.w3schools.com/html/mov_bbb.mp4"; // Placeholder for testing
+
 interface GalleryItem {
   id: number;
   title: string;
   category: string;
   date: string;
-  image: string;
+  image: string; // Used as the thumbnail for videos
+  video?: string; // Optional video URL
+  type?: 'image' | 'video'; // Identifies the media type
   color: string;
 }
 
@@ -25,12 +30,13 @@ export const Gallery: React.FC = () => {
   const [activePhotoIndex, setActivePhotoIndex] = useState<number | null>(null);
 
   const photos: GalleryItem[] = [
-    { id: 1, title: "10th Annual General Body Meeting", category: "Annual General Meetings", date: "August 2025", image: img1, color: "from-[#FF9900] to-amber-600" },
-    { id: 2, title: "Farmers Micro-Credit Assistance Drive", category: "Community Welfare Activities", date: "October 2025", image: img2, color: "from-green-600 to-[#FF9900]" },
-    { id: 3, title: "Gold Loan Security Locker Cabinets", category: "Society Events", date: "March 2024", image:img3, color: "from-[#FF9900] to-[#D4AF37]" },
-    { id: 4, title: "State Union Audit Excellence Recognition", category: "Certificates and Awards", date: "July 2025", image: img4, color: "from-purple-600 to-[#FF9900]" },
-    { id: 5, title: "Doorstep Pigmy Ledger Collector Setup", category: "Year-wise Achievements", date: "January 2024", image: img1, color: "from-[#5B4636] to-[#FF9900]" },
-    { id: 6, title: "Local Micro-Traders Loan Distribution", category: "Loan Distribution Programs", date: "November 2025", image: img6, color: "from-[#D4AF37] to-amber-700" }
+    { id: 1, title: "10th Annual General Body Meeting", category: "Annual General Meetings", date: "August 2025", image: img1, type: 'image', color: "from-[#FF9900] to-amber-600" },
+    // Updated ID 2 to be a video
+    { id: 2, title: "Folk Dance - Farmers Assistance Drive", category: "Community Welfare Activities", date: "October 2025", image: img2, video: folkDanceVideo, type: 'video', color: "from-green-600 to-[#FF9900]" },
+    { id: 3, title: "Gold Loan Security Locker Cabinets", category: "Society Events", date: "March 2024", image: img3, type: 'image', color: "from-[#FF9900] to-[#D4AF37]" },
+    { id: 4, title: "State Union Audit Excellence Recognition", category: "Certificates and Awards", date: "July 2025", image: img4, type: 'image', color: "from-purple-600 to-[#FF9900]" },
+    { id: 5, title: "Doorstep Pigmy Ledger Collector Setup", category: "Year-wise Achievements", date: "January 2024", image: img1, type: 'image', color: "from-[#5B4636] to-[#FF9900]" },
+    { id: 6, title: "Local Micro-Traders Loan Distribution", category: "Loan Distribution Programs", date: "November 2025", image: img6, type: 'image', color: "from-[#D4AF37] to-amber-700" }
   ];
 
   // Keyboard Navigation
@@ -63,6 +69,7 @@ export const Gallery: React.FC = () => {
       setActivePhotoIndex((activePhotoIndex + 1) % photos.length);
     }
   };
+
   return (
     <>
       <SEO 
@@ -79,7 +86,7 @@ export const Gallery: React.FC = () => {
             Society Gallery
           </h1>
           <p className="mt-3 text-base text-[#5B4636]/70 max-w-2xl mx-auto font-medium">
-            Browse real photographs capturing our general assemblies, loan disbursement events, and public welfare campaigns.
+            Browse real photographs and videos capturing our general assemblies, loan disbursement events, and public welfare campaigns.
           </p>
         </div>
       </section>
@@ -97,13 +104,23 @@ export const Gallery: React.FC = () => {
                 onClick={() => setActivePhotoIndex(index)}
                 className="bg-white border border-[#D4AF37]/20 rounded-2xl overflow-hidden shadow-sm flex flex-col justify-between hover:shadow-md transition-all duration-300 cursor-pointer group hover:border-[#FF9900]"
               >
-                {/* Image Block */}
+                {/* Image/Thumbnail Block */}
                 <div className="h-48 relative overflow-hidden border-b border-[#D4AF37]/15">
                   <img 
                     src={item.image} 
                     alt={item.title} 
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" 
                   />
+                  
+                  {/* Play Icon overlay for Videos */}
+                  {item.type === 'video' && (
+                    <div className="absolute inset-0 flex items-center justify-center z-15 pointer-events-none">
+                      <div className="bg-black/40 group-hover:bg-[#FF9900]/90 transition-colors duration-300 rounded-full p-4 backdrop-blur-sm border border-white/20 shadow-lg">
+                        <Play className="w-8 h-8 text-white ml-1" fill="currentColor" />
+                      </div>
+                    </div>
+                  )}
+
                   {/* Text overlay with dark gradient */}
                   <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/25 to-transparent p-5 flex flex-col justify-between text-white text-left z-10">
                     <span className="px-2.5 py-1 bg-white/20 backdrop-blur-md rounded text-[10px] font-bold w-fit uppercase tracking-wider border border-white/20">
@@ -118,17 +135,19 @@ export const Gallery: React.FC = () => {
                     </div>
                   </div>
                   
-                  {/* Zoom Icon overlay */}
-                  <div className="absolute inset-0 bg-[#5B4636]/30 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center z-20">
-                    <ZoomIn className="w-8 h-8 text-white" />
-                  </div>
+                  {/* Zoom Icon overlay (only for images) */}
+                  {item.type !== 'video' && (
+                    <div className="absolute inset-0 bg-[#5B4636]/30 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center z-20">
+                      <ZoomIn className="w-8 h-8 text-white" />
+                    </div>
+                  )}
                 </div>
 
                 {/* Description info */}
                 <div className="p-5 text-left flex items-center justify-between border-t border-gray-50 select-none">
                   <span className="text-xs text-[#5B4636]/70 font-semibold">Udupi Co-operative Records</span>
                   <span className="text-xs font-bold text-[#FF9900] group-hover:text-[#D4AF37] transition-colors flex items-center gap-0.5">
-                    View Photo &rarr;
+                    {item.type === 'video' ? 'Watch Video \u2192' : 'View Photo \u2192'}
                   </span>
                 </div>
               </div>
@@ -171,37 +190,46 @@ export const Gallery: React.FC = () => {
                   <button 
                     onClick={() => setActivePhotoIndex(null)}
                     className="p-1.5 rounded-full hover:bg-gray-100 text-gray-500 hover:text-gray-900 border border-gray-200 min-h-[40px] min-w-[40px] flex items-center justify-center"
-                    aria-label="Close photo"
+                    aria-label="Close media"
                   >
                     <X className="w-5 h-5" />
                   </button>
                 </div>
 
-                {/* Lightbox Image Graphic Block */}
+                {/* Lightbox Media Block */}
                 <div className="flex-grow flex items-center justify-center py-8 relative min-h-[300px]">
                   {/* Left navigation arrow */}
                   <button
                     onClick={handlePrevPhoto}
                     className="absolute left-2 p-2 bg-white hover:bg-[#FFF4E6] text-[#5B4636] border border-[#D4AF37]/30 rounded-full transition-colors min-h-[44px] min-w-[44px] flex items-center justify-center shadow-md z-10"
-                    aria-label="Previous photo"
+                    aria-label="Previous media"
                   >
                     <ChevronLeft className="w-5 h-5" />
                   </button>
 
-                  {/* Centered Graphic Card representing the photo */}
+                  {/* Centered Graphic Card representing the photo/video */}
                   <div className="w-full max-w-xl aspect-[4/3] bg-black/90 rounded-2xl overflow-hidden border border-[#D4AF37]/35 shadow-2xl flex flex-col items-center justify-center select-none relative">
-                    <img 
-                      src={photos[activePhotoIndex].image} 
-                      alt={photos[activePhotoIndex].title} 
-                      className="w-full h-full object-contain" 
-                    />
+                    {photos[activePhotoIndex].type === 'video' ? (
+                      <video 
+                        src={photos[activePhotoIndex].video} 
+                        controls 
+                        autoPlay 
+                        className="w-full h-full object-contain focus:outline-none" 
+                      />
+                    ) : (
+                      <img 
+                        src={photos[activePhotoIndex].image} 
+                        alt={photos[activePhotoIndex].title} 
+                        className="w-full h-full object-contain" 
+                      />
+                    )}
                   </div>
 
                   {/* Right navigation arrow */}
                   <button
                     onClick={handleNextPhoto}
                     className="absolute right-2 p-2 bg-white hover:bg-[#FFF4E6] text-[#5B4636] border border-[#D4AF37]/30 rounded-full transition-colors min-h-[44px] min-w-[44px] flex items-center justify-center shadow-md z-10"
-                    aria-label="Next photo"
+                    aria-label="Next media"
                   >
                     <ChevronRight className="w-5 h-5" />
                   </button>
