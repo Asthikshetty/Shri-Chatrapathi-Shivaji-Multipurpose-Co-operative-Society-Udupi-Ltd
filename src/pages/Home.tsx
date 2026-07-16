@@ -11,7 +11,7 @@ import hero1 from '../assets/shivajisociety/images/vip1.png';
 // import hero3 from '../assets/shivajisociety/images/office-outlook.png';
 import officeImage from '../assets/shivajisociety/images/inside-office1.png';
 import officeOutlook from '../assets/shivajisociety/images/office-outlook.png';
-import vvip1 from '../assets/shivajisociety/images/gallery1.png';
+import vvip1 from '../assets/shivajisociety/images/vipnew.png';
 import vip6 from '../assets/shivajisociety/images/gallery1.png';
 import gallery1 from '../assets/shivajisociety/images/gallery3.png';
 
